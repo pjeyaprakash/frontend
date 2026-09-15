@@ -37,15 +37,16 @@
         if (isInvalidInput) return 
 
         //api call
-        const res = await api.post(
-            '/auth/login', 
-            auth.LoginRequest, 
-            auth.LoginResponse,
-            formData
-        )
-        if (res.success) {
-            console.log(res.message)
-            await goto('/home');
+        // const res = await api.post(
+        //     '/auth/login', 
+        //     auth.LoginRequest, 
+        //     auth.LoginResponse,
+        //     formData
+        // )
+        // if (res.success) {
+        if (true) {
+            // console.log(res.message)
+            await goto('/home/dashboard');
         } else {
             console.error(res.message)
         }
