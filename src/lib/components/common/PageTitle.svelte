@@ -17,7 +17,7 @@
 <style>
 
 div {
-    color: rgb(255, 205, 138);
+    color: #ffcd8a;
     font-size: 2rem;
     font-weight: 400;
 }

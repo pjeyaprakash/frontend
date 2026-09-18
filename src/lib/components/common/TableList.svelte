@@ -33,91 +33,66 @@
 
 
 <style>
-/* 
-.table {
-    display: grid;
-    width: 100%;
 
-    background:
-        linear-gradient(
-            135deg,
-            rgba(175, 175, 175, 0.16),
-            rgba(255, 255, 255, 0.05)
-        );
-
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
-
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 18px;
-
-    box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.25),
-        inset 0 -1px 0 rgba(255, 255, 255, 0.05);
-
-    overflow: hidden;
-} */
 
 
 
 .table {
     display: grid;
     width: 100%;
-    position: relative;
-    isolation: isolate;
+    /* position: relative; */
+    /* isolation: isolate; */
 
-    background: rgba(187, 187, 187, 0.08);
+    background: #1E222B;
 
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    /* backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%); */
 
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    border-radius: 20px;
+    border: 1px solid #bea96f;
+    border-left: 5px solid #bea96f;
+    border-right: 5px solid #bea96f;
+
+    border-radius: 10px;
 
     box-shadow:
-        0 10px 40px rgba(255, 255, 255, 0.2),
-        inset 0 1px 0 rgba(83, 83, 83, 0.2);
-    
+        0 10px 40px rgba(83, 83, 83, 0.2),
+        inset 0 1px 0 rgba(46, 43, 43, 0.2);
+
     overflow: hidden;
 }
-/* 
-.table::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: -1;
 
-    background:
-        radial-gradient(
-            500px circle at 0% 0%,
-            rgba(255, 255, 255, 0.274),
-            transparent 60%
-        ),
-        radial-gradient(
-            400px circle at 100% 100%,
-            rgba(83, 88, 88, 0.699),
-            transparent 60%
-        );
-} */
+
 
 
 
 
 .row {
     display: grid;
+    /* border-radius: 20px; */
     /* grid-template-columns: repeat(var(--columns), 1fr); */
 }
 
 .cell {
     padding: 12px 16px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #424242;
+    letter-spacing: 1.2px;
 }
 
-    .header {
-        font-weight: 600;
-    }
+.header {
+    /* background: linear-gradient(#0000ff50, black); */
+    /* background: linear-gradient( #161616, #2254af); */
+    background: linear-gradient( #14274b6e, #183468);
+    
+    
+}
+.header .cell {
+    /* color: #ffba3b; */
+    color: #ffc455;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #bea96f;
+    
+}
 
 
 </style>
