@@ -1,4 +1,6 @@
 <script>
+	import Pagination from "./Pagination.svelte";
+
 
     const {
         tableHeaders,
@@ -29,6 +31,8 @@
         </div>
     {/each}
 
+    <Pagination />
+
 </div>
 
 
@@ -43,7 +47,7 @@
     /* position: relative; */
     /* isolation: isolate; */
 
-    background: #1E222B;
+    background: #1e222bb4;
 
     /* backdrop-filter: blur(30px) saturate(180%);
     -webkit-backdrop-filter: blur(30px) saturate(180%); */
@@ -73,23 +77,27 @@
 }
 
 .cell {
-    padding: 12px 16px;
+    padding: 12px 0;
     border-bottom: 1px solid #424242;
     letter-spacing: 1.2px;
+    /* background-color: antiquewhite; */
+    text-align: center;
 }
 
 .header {
     /* background: linear-gradient(#0000ff50, black); */
     /* background: linear-gradient( #161616, #2254af); */
-    background: linear-gradient( #14274b6e, #183468);
+    background: linear-gradient(  #0a1a386e, #234d996e);
+    
+    
     
     
 }
 .header .cell {
-    /* color: #ffba3b; */
+    padding: 15px 0;
     color: #ffc455;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     border-bottom: 1px solid #bea96f;
     
 }
